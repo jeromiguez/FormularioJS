@@ -1,0 +1,65 @@
+body{
+    
+    font-family: Calibri;
+    padding: 10px 20px;
+}
+
+h1 {
+	color: #FFFFFF;
+	background-color: #ffbd33;
+	padding: 10px;
+	border-radius:0 20px;
+}
+
+.formulario {
+	background-color: #ffbd33;
+	width: min(30rem, 100%);
+	margin: 0 auto;
+	padding: 2rem;
+	border-radius: 1rem;
+}
+.formulario legend {
+	text-align: center;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	color: #FFFFFF;
+}
+
+.campo {
+	margin-bottom: 1rem;
+}
+.campo label {
+	color: #FFFFFF;
+	font-weight: bold;
+	margin-bottom: .5rem;
+	display: block;
+}
+
+.inputs {
+	width: 100%;
+	border: none;
+	height: 2rem;
+	border-radius: .2rem;
+}
+
+.boton-ubicacion {
+	display: flex;
+	justify-content: center;
+}
+.boton {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: .5rem;
+}
+
+.boton:hover {
+	background-color: aquamarine;
+	cursor: pointer;
+}
+
+.divValidaciones { 
+	color: red;
+}

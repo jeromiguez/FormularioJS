@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evaluación 7</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/validacion.js"></script>
+
+</head>
+<body>
+	
+		<h1>Evaluación Unidad VII</h1>
+        
+        <form method="POST" action="" class="formulario">
+            <fieldset>
+                <legend>Formulario evaluación 7</legend>
+                    <div class="campos">
+
+                        <div class="campo">
+                            <label for="nombre">Nombre:</label>
+                            <input class="inputs" type="text" name="nombre" placeholder="Tu nombre..." id="nombre" value="" required>
+                        </div>
+
+                        <div class="divValidaciones" id="valNombre"></div>
+                        
+                        <div class="campo">
+                            <label for="apellido">Apellido:</label>
+                            <input class="inputs" type="text" placeholder="Tu apellido..." id="apellido">
+                        </div>
+
+                        <div class="divValidaciones" id="valApe"></div>
+
+                        <div class="campo">
+                            <label for="email">E-Mail:</label>
+                            <input class="inputs" type="email" placeholder="ejemplo@dominio.com" id="email" required>
+                        </div>
+
+                        <div class="divValidaciones" id="valEmail"></div>
+
+                        <div class="campo">
+                            <label for="telefono">Teléfono:</label>
+                            <input class="inputs" type="number" placeholder="011 5555-5555" id="telefono">
+                        </div>
+
+                        <div class="divValidaciones" id="valTel"></div>
+
+                        <div class="campo">
+                            <label for="date">Fecha nacimiento:</label>
+                            <input class="inputs" type="date" id="nacimiento" onchange="validarNacimiento()">
+                        </div>
+
+                        <div class="divValidaciones" id="valNac"></div>
+
+                        <div class="campo">
+                            <label for="clave">Clave:</label>
+                            <input class="inputs" type="password" placeholder="Tu clave..." id="pass" required>
+                        </div>
+
+                        <div class="divValidaciones" id="valPass"></div>
+
+                    </div>
+                    
+                    <div class="boton-ubicacion">
+                        <input class="boton" type="submit" value="Enviar" onclick="return formularioVal()">
+                    </div>
+            </fieldset>    
+            
+        </form>
+
+        
+
+	
+</body>
+</html>
